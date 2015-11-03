@@ -1,0 +1,25 @@
+h1
+{
+    text-align: center;
+}
+
+footer
+{
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#aid_kit
+{
+    margin: auto;
+}
+
+.fill
+{
+    height: 100%;
+    width: 100%;
+}
+
+a.nav-link
+{
+}
