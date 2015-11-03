@@ -5,11 +5,26 @@
  * Date: 11/2/15
  * Time: 11:03 PM
  */
-$postData = array();
-foreach($_POST as $data){
-    array_push($postData, $data);
+$form = $_POST['form'];
+$userAnswers = Array();
+$correctAnswers = Array();
+$return = Array();
+
+for($i = 0; $i < count($form); $i+=2){
+    array_push($userAnswers, $form[$i]);
+    array_push($correctAnswers, $form[$i+1]);
 }
 
-foreach($postData as $newData){
-    print $newData;
+for($j = 0; $j < count($userAnswers); $j++){
+    if($userAnswers[$j]['value'] == $correctAnswers[$j]['value']){
+        $result = array("name" => $userAnswers[$j]['name'], "value" => "true");
+        array_push($return, $result);
+    } else{
+        $result = array("name" => $userAnswers[$j]['name'], "value" => "false");
+        array_push($return, $result);
+    }
 }
+
+header("Content-Type: application/json");
+echo json_encode($return);
+exit;
