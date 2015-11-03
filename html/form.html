@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title></title>
     <link href="../stylesheets/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/form-style.css" rel="stylesheet">
     <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/form-submision.js"></script>
 </head>
 <body>
     <div class="container">
@@ -36,23 +38,38 @@
 
                         <input type="hidden" class="form-control" name="question2_answer" value="1">
                     </div>
+                    <div class="radio">
+                        <p>What is the answer?</p>
+                        <label><input type="radio" name="question3" value="1" required="required"> Answer1</label>
+                        <br />
+                        <label><input type="radio" name="question3" value="2"> Answer2</label>
+                        <br />
+                        <label><input type="radio" name="question3" value="3"> Answer3 </label>
+                        <br />
+                        <label><input type="radio" name="question3" value="4"> Answer4 </label>
+
+                        <input type="hidden" class="form-control" name="question3_answer" value="3">
+                    </div>
+                    <div class="radio">
+                        <p>What is the other answer?</p>
+                        <label><input type="radio" name="question4" value="1" required="required"> Answer1</label>
+                        <br />
+                        <label><input type="radio" name="question4" value="2"> Answer2</label>
+                        <br />
+                        <label><input type="radio" name="question4" value="3"> Answer3 </label>
+                        <br />
+                        <label><input type="radio" name="question4" value="4"> Answer4 </label>
+
+                        <input type="hidden" class="form-control" name="question4_answer" value="1">
+                    </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
+                <br />
+                <div id="result">
+
+                </div>
             </div>
         </div>
     </div>
 </body>
-
-<script>
-    $(document).ready(function(){
-        $("form").submit(function(event){
-            event.preventDefault();
-            var form = $("form").serializeArray();
-            $.post("../php/form.php", {form: form},
-                function(data){
-                    console.log(data);
-                });
-        });
-    });
-</script>
 </html>
