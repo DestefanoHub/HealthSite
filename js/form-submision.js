@@ -8,13 +8,13 @@ $(document).ready(function(){
         $.post("../php/form.php", {form: form},
             function(data){
                 $.each(data, function(key, value){
+                    //var answerText = $("div#"+value.name > "label").text();
                     if(value.value == true){
                         var html = "<p class='correct'>" + value.name + "<br />" + value.answer + "<br /> </p>";
                     } else{
-                        var html = "<p class='incorrect'>" + value.name + "<br />" + value.answer + "<br /> </p>";
+                        var html = "<p class='incorrect'>" + value.name + "<br /> Correct Answer: " + value.answer + "<br /> </p>";
                     }
                     $("div#result").append(html);
-
                 });
             });
     });
