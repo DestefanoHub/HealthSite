@@ -1,0 +1,125 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 9, 2015, 10:56:53 PM
+    Author     : cina
+*/
+
+
+
+
+/*.edunav*/
+.edunav,
+.edunav ul,
+.edunav ul li,
+.edunav ul li a 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*line border*/
+.edunav 
+{
+    width: inherit;
+    border-bottom: 4px solid #FF0000;
+    font-family: sans-serif;
+    line-height: 1;
+}
+
+/*link alignment*/
+.edunav > ul > li 
+{
+    float: left;
+}
+
+
+
+
+
+/*before link formatting with line and transition and prefixes for compatiblity*/
+.edunav > ul > li > a 
+{
+    z-index: 2;
+    padding: 18px 25px 12px 25px;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    margin-right: -4px;
+}
+
+
+
+
+/*turns text from black to white*/ 
+.edunav > ul > li:hover > a,
+.edunav > ul > li > a:hover 
+{
+  color: #ffffff;
+}
+
+
+
+
+/*redbox effect & prefixes for compatibility:*/
+.edunav > ul > li > a:after 
+{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: 120%;
+  
+  /*transition:*/
+  content: "";
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  
+  -webkit-transform: perspective(5px) rotateX(2deg);
+  -webkit-transform-origin: bottom;
+  -moz-transform: perspective(5px) rotateX(2deg);
+  -moz-transform-origin: bottom;
+  transform: perspective(5px) rotateX(2deg);
+    /*^shape*/
+}
+
+
+/*red color tab effect:*/
+.edunav > ul > li:hover > a:after,
+.edunav > ul > li > a:hover:after 
+{
+  background: #FF0000;
+}
+
+
+
+/*line placement:*/
+.edunav:after,
+.edunav > ul:after 
+{
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
