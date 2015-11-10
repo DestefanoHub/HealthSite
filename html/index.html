@@ -6,6 +6,8 @@
     <!--Stylesheets-->
     <link href="../stylesheets/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../stylesheets/index-style.css" rel="stylesheet">
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/index.js"></script>
 </head>
 
 <body>
@@ -13,7 +15,9 @@
         <div class="container fill">
             <!--Title bar-->
             <header>
-                <a id="aid_kit" href="#" class="btn btn-info">First Aid Kit</a>
+                <button id="aid-kit" class="btn">
+                    Click Me!
+                </button>
                 <h1>The First Aid Web Kit</h1>
             </header>
         </div>
@@ -23,16 +27,24 @@
         <!--Navigation-->
         <div id="nav-section" class="row">
             <div class="col-md-6">
-                <a href="#" class="btn btn-info pull-left nav-link">Immediate Assistance</a>
+                <button id="help" class="btn btn-danger nav-link">Immediate Assistance</button>
             </div>
             <div class="col-md-6">
-                <a href="Edu_Injuries.html" class="btn btn-info pull-right nav-link">Injuries</a>
+                <button id="info" class="btn btn-info nav-link">Education</button>
+            </div>
+        </div>
+        <div id="nav-section-end" class="row">
+            <div class="col-md-12">
+                <button id="911" class="btn btn-warning nav-link-end">911 Call Info</button>
             </div>
         </div>
         <!--Footer-->
         <div id="footer" class="row">
             <div class="col-md-12">
                 <footer>
+                    <p class="important">
+                        If this is a true emergency, please call 911 immediately.
+                    </p>
                     <p>
                         Please review our disclaimer, as well as important website information <a href="#">here</a>.
                         For a list of citations, please go <a href="#">here</a>.
