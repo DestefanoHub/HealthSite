@@ -34,3 +34,6 @@ $html = "<div class='list-group'>
                 <span class='glyphicon glyphicon-flash'></span>&nbsp;&nbsp;&nbsp;&nbsp;Seizures
             </button>
         </div>";
+header('Content-Type: text/html');
+echo $html;
+exit;
