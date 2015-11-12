@@ -9,7 +9,7 @@ $(document).ready(function(){
         location.assign("#");
     });
     $("button#info").click(function(){
-        location.assign("../html/Edu_Injuries.html");
+        location.assign("../html/edu_injuries_list.html");
     });
     $("button#911").click(function(){
         location.assign("#");
