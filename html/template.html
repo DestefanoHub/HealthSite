@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <link href="../stylesheets/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../stylesheets/template.css" rel="stylesheet">
+    <link href="../stylesheets/menu_education.css" rel="stylesheet">
     <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <script src="../js/template.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-default" role="navigation">
         <div class="container fill">
             <!--Title bar-->
-            <header>
-                <button id="aid-kit" class="btn">
+            <header class="header">
+                <a href="kit.html" id="aid-kit" class="btn">
                     Click Me!
-                </button>
+                </a>
                 <h1>The First Aid Web Kit</h1>
             </header>
         </div>
@@ -23,19 +25,19 @@
     <div class="container fill">
         <div class="row">
             <div class="col-md-3" id="left-col">
-                <div class="navbar-fixed-side navbar-fixed-side-left">
-                    <ul class="nav">
+                <nav class="navbar-fixed-side navbar-fixed-side-left">
+                    <ul id="danger-nav" class="list-unstyled">
                         <li class="active">
-                            <button id="help" class="btn btn-danger nav-link">Immediate Assistance</button>
+                            <a href="#" id="help" class="btn btn-danger nav-link">Immediate Assistance</a>
                         </li>
                         <li>
-                            <button id="info" class="btn btn-warning nav-link">911 Call</button>
+                            <a href="#" id="911" class="btn btn-warning nav-link">911 Call</a>
                         </li>
                         <li>
-                            <button id="911" class="btn btn-info nav-link">Injuries</button>
+                            <a href="template.html" id="info" class="btn btn-info nav-link">Injuries</a>
                         </li>
                     </ul>
-                </div>
+                </nav>
             </div>
 
             <div class="col-md-9" id="content">

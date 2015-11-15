@@ -12,10 +12,7 @@ and open the template in the editor.
 
 
 /*.edunav*/
-.edunav,
-.edunav ul,
-.edunav ul li,
-.edunav ul li a 
+ul.edunav > li > a
 {
     margin: 0;
     padding: 0;
@@ -37,18 +34,8 @@ and open the template in the editor.
     line-height: 1;
 }
 
-/*link alignment*/
-.edunav > ul > li 
-{
-    float: left;
-}
-
-
-
-
-
 /*before link formatting with line and transition and prefixes for compatiblity*/
-.edunav > ul > li > a 
+ul.edunav > li > a
 {
     z-index: 2;
     padding: 18px 25px 12px 25px;
@@ -68,8 +55,8 @@ and open the template in the editor.
 
 
 /*turns text from black to white*/ 
-.edunav > ul > li:hover > a,
-.edunav > ul > li > a:hover 
+ul.edunav > li:hover > a,
+ul.edunav > li > a:hover
 {
   color: #ffffff;
 }
@@ -78,7 +65,7 @@ and open the template in the editor.
 
 
 /*redbox effect & prefixes for compatibility:*/
-.edunav > ul > li > a:after 
+ul.edunav > li > a:after
 {
   position: absolute;
   left: 0;
@@ -102,24 +89,29 @@ and open the template in the editor.
     /*^shape*/
 }
 
+ul.edunav > li > a:hover
+{
+    background-color: red;
+}
+
 
 /*red color tab effect:*/
-.edunav > ul > li:hover > a:after,
-.edunav > ul > li > a:hover:after 
-{
-  background: #FF0000;
-}
+/*ul.edunav > li:hover > a:after,*/
+/*ul.edunav > li > a:hover:after*/
+/*{*/
+  /*background: #FF0000;*/
+/*}*/
 
 
 
 /*line placement:*/
-.edunav:after,
-.edunav > ul:after 
-{
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
+/*.edunav:after,*/
+/*ul.edunav:after*/
+/*{*/
+  /*content: ".";*/
+  /*display: block;*/
+  /*clear: both;*/
+  /*visibility: hidden;*/
+  /*line-height: 0;*/
+  /*height: 0;*/
+/*}*/

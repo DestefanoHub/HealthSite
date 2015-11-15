@@ -11,17 +11,17 @@ $correctAnswers = Array();
 $return = Array();
 
 for($i = 0; $i < count($form); $i+=2){
-    array_push($userAnswers, $form[$i]);
-    array_push($correctAnswers, $form[$i+1]);
+    $userAnswers[] = $form[$i];
+    $correctAnswers[] =  $form[$i+1];
 }
 
 for($j = 0; $j < count($userAnswers); $j++){
     if($userAnswers[$j]['value'] == $correctAnswers[$j]['value']){
         $result = array("name" => $userAnswers[$j]['name'], "value" => true, "answer" => $correctAnswers[$j]['name']);
-        array_push($return, $result);
+        $return[] = $result;
     } else{
         $result = array("name" => $userAnswers[$j]['name'], "value" => false, "answer" => $correctAnswers[$j]['name']);
-        array_push($return, $result);
+        $return[] = $result;
     }
 }
 
