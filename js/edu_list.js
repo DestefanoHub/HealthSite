@@ -4,9 +4,8 @@
 jQuery(function ($) {
     var $contentDiv = $("div#content");
     $("#edu-section").on("click", ".list-group-item", function () {
-        var directoryName = $(this).attr("data-section");
-        var pageName = directoryName + ".php";
-        $.get("../page-content/" + directoryName + "/" + pageName, function (pageData) {
+        var pageName = $(this).attr("data-section") + ".html";
+        $.get("../page-content/" + pageName, function (pageData) {
             $contentDiv.html(pageData);
         });
     });

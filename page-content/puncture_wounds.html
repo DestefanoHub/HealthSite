@@ -1,0 +1,132 @@
+<div id="puncture-wounds">
+    <ul class="nav nav-tabs edunav">
+        <li class="active"><a class="tab-nav-action" href="#causes" role="tab" data-toggle="tab" aria-controls="causes" aria-expanded="true">Causes</a></li>
+        <li><a class="tab-nav-action" href="#treatment" role="tab" data-toggle="tab" aria-controls="treatment"
+               aria-expanded="false">Treatment</a>
+        </li>
+        <li><a class="tab-nav-action" href="#quiz" role="tab" data-toggle="tab" aria-controls="quiz" aria-expanded="false">Quiz</a></li>
+    </ul>
+    <div id="tab-content" class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="causes">
+            <p>
+                A puncture wound is caused when a sharp or pointed object penetrates the body. These wounds are often
+                much deeper than lacerations, even for minor punctures. This is because the object does not cut
+                horizontally across the skin, but vertically into the body. Such a wound usually does not bleed too much,
+                but can still be very dangerous. There is a much higher risk of infection from a puncture wound because
+                the object has penetrated into the body. Common puncture wounds are stingers, bites, and stepping or
+                falling on sharp pointed objects like nails or glass.
+            </p>
+            <p>
+                It is likely that a puncture can leave behind debris in the wound. If this is the case, there are
+                several different courses of action you could take. If the object is still in the wound, you should
+                attempt to remove it only if it is not likely to cause damage on the way out. A shard of glass can be
+                gently pulled out, but if it is jagged and begins to tear or break off, it should be left. This is
+                similar to a splinter, if it is coming out cleanly, then remove it. If it begins to break apart and
+                cause pieces to get stuck, leave it. Do not make the wound larger by trying to dig around to remove
+                debris. Never remove debris from a puncture wound to the eye. If the wound is serious, either because
+                of the location of the wound (such as the eye), or because it has penetrated deeply, do not remove it.
+                If the object is removed or falls out, make sure to check if the entirety of the object has come out
+                and that none of it is still left in the wound.
+            </p>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="treatment">
+            <p>
+                To treat a puncture wound, first apply pressure to stop any bleeding. Clean the wound with soap and
+                water. Do not use alcohol, iodine, peroxide, or other such cleaning agents, as this can damagea tissue
+                and slow healing. Check if there is anything in the wound, and if safe to do so, attempt to remove it.
+                Apply a bandage over the wound, optionally with antibacterial ointment. If the person is in pain, apply
+                an ice pack.
+            </p>
+            <p>
+                If the wound was deep or near a vital area, if bleeding continues for several minutes or is severe, if
+                it was caused by bite (animal or human), or if there is debris still in the wound, seek medical
+                attention immediately. Infections are much more common with puncture wounds, so constantly check for
+                signs of infection, such as pus, redness or swelling, and recurring pain around the wound. If objects
+                are still stuck in the wound, they may be visible under the skin.
+            </p>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="quiz">
+            <h3>Please answer all questions</h3>
+            <form method="post" action="../php/form.php">
+                <div id="question1" class="radio">
+                    <p class="question">Under which circumstances should a foreign object be removed from a puncture wound?</p>
+                    <label title="1"><input type="radio" name="question1" value="1" required="required"> The object has penetrated deeply.</label>
+                    <br />
+                    <label title="2"><input type="radio" name="question1" value="2"> It is difficult to remove the object.</label>
+                    <br />
+                    <label title="1"><input type="radio" name="question1" value="3" required="required"> The object has penetrated near a major artery.</label>
+                    <br />
+                    <label title="2"><input type="radio" name="question1" value="4"> The object can be pulled out cleanly and is not near a vital area.</label>
+
+                    <input type="hidden" class="form-control" name="The object can be pulled out cleanly and is not near a vital area." value="4">
+                </div>
+                <div id="question2" class="radio">
+                    <p class="question">Immediately seek medical attention for a puncture wound if:</p>
+                    <label title="1"><input type="radio" name="question2" value="1" required="required"> The object falls out.</label>
+                    <br />
+                    <label title="2"><input type="radio" name="question2" value="2"> The wound was caused by a bite.</label>
+                    <br />
+                    <label title="3"><input type="radio" name="question2" value="3"> The wound was caused by a sting.</label>
+                    <br />
+                    <label title="4"><input type="radio" name="question2" value="4"> Both two and three.</label>
+
+                    <input type="hidden" class="form-control" name="The wound was caused by a bite." value="2">
+                </div>
+                <div id="question3" class="radio">
+                    <p class="question">The risk of infection for a puncture wound is:</p>
+                    <label title="1"><input type="radio" name="question3" value="1" required="required"> Low because only a small surface area is affected.</label>
+                    <br />
+                    <label title="2"><input type="radio" name="question3" value="2"> High if the wound was near a vital area.</label>
+                    <br />
+                    <label title="3"><input type="radio" name="question3" value="3"> Low if all of the foreign particles are removed.</label>
+                    <br />
+                    <label title="4"><input type="radio" name="question3" value="4"> High because the object has penetrated into the body.</label>
+
+                    <input type="hidden" class="form-control" name="High because the object has penetrated into the body." value="4">
+                </div>
+                <div id="question4" class="radio">
+                    <p class="question">What should you <em>not</em> do when treating a puncture wound?</p>
+                    <label title="1"><input type="radio" name="question4" value="1" required="required"> Remove foreign particles.</label>
+                    <br />
+                    <label title="2"><input type="radio" name="question4" value="2"> Clean the wound.</label>
+                    <br />
+                    <label title="3"><input type="radio" name="question4" value="3"> Dig around attempting to remove all foreign particles.</label>
+                    <br />
+                    <label title="4"><input type="radio" name="question4" value="4"> Leave foreign particles in the wound if it is in the eye or near a vital area.</label>
+
+                    <input type="hidden" class="form-control" name="Dig around attempting to remove all foreign particles." value="3">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br />
+            <div id="result">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    jQuery(function($){
+        $("#abrasions").on("click", ".tab-nav-action", function(e){
+            e.preventDefault();
+            $(this).tab("show");
+        });
+
+        $("form").submit(function(event){
+            event.preventDefault();
+            var form = $("form").serializeArray();
+            $.post("../php/form.php", {form: form},
+                    function(data){
+                        var html = [];
+                        $.each(data, function(key, value){
+                            if(value.value == true){
+                                html.push("<p class='correct'>" + value.name + "<br />" + value.answer + "<br /> </p>");
+                            } else{
+                                html.push("<p class='incorrect'>" + value.name + "<br /> Correct Answer: " + value.answer + "<br /> </p>");
+                            }
+                        });
+                        $("div#result").html(html.join(""));
+                    });
+        });
+    });
+</script>

@@ -1,0 +1,123 @@
+<div id="abrasions">
+    <ul class="nav nav-tabs edunav">
+        <li class="active"><a class="tab-nav-action" href="#causes" role="tab" data-toggle="tab" aria-controls="causes" aria-expanded="true">Causes</a></li>
+        <li><a class="tab-nav-action" href="#treatment" role="tab" data-toggle="tab" aria-controls="treatment"
+               aria-expanded="false">Treatment</a>
+        </li>
+        <li><a class="tab-nav-action" href="#quiz" role="tab" data-toggle="tab" aria-controls="quiz" aria-expanded="false">Quiz</a></li>
+    </ul>
+    <div id="tab-content" class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="causes">
+            <p>
+                Commonly known as scrapes, abrasions are injuries where the skin is rubbed or torn off. It is likely
+                that most people have suffered an abrasion before, likely multiple times. Common abrasions are rug burn,
+                and skinning your knee or elbow. Abrasions are not typically deep and usually do not bleed much, if at
+                all. However, as with most injuries, abrasions to the face or other blood rich areas are likely to bleed
+                , which can be misleading in terms of severity. It is common to receive abrasions more often on bony or
+                thinly skinned areas, like the elbows, knees, hands, and shins. Abrasions are typically more painful
+                than lacerations or puncture wounds because a much larger surface area is affected.
+            </p>
+            <p>
+                While most abrasions are not deep or serious, an avulsion is a serious type of abrasion where the
+                affected skin and tissue is actually removed. These are very severe wounds because the affected region
+                is torn off, so it is hard to repair the damage. An avulsion should be cared for by a medical
+                professional immediately.
+            </p>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="treatment">
+            <p>
+                The first step in treatment is to stop the bleeding, if any, by simply applying pressure to the wound
+                site. This can be more difficult than for other injuries because of the larger surface area of the
+                wound. Cleaning the wound is still important as particles can get into the wound easily. However, it is
+                likely that the wound is not deep and any particles can usually be removed with ease by washing the wound
+                with soap and water. It is not recommended to use alcohol, iodine, peroxide, or other such cleaning
+                agents as it could further damage tissue and slow down healing. Applying an ice pack would help to
+                lessen any pain.
+            </p>
+            <p>
+                Infections are possible with abrasions; pay attention for continuing pain, the wound becoming red and
+                swollen, and pus. If bleeding has not ceased after several minutes of applying pressure or a bandage,
+                seek medical attention. If the victim has not had a tetanus vaccination in the past five years and the
+                wound has been exposed to foreign materials, help should be sought immediately. If someone has suffered
+                an avulsion, immediately bring them to the hospital. Attempt to bandage the wound and stop any bleeding
+                with pressure and by elevating the injury above the heart. Recovery for avulsions will vary greatly
+                depending on how much skin and tissue was removed.
+            </p>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="quiz">
+            <h3>Please answer all questions</h3>
+            <form method="post" action="../php/form.php">
+                <div id="question1" class="radio">
+                    <p class="question">An avulsion is:</p>
+                    <label title="1"><input type="radio" name="question1" value="1" required="required"> A serious type of abrasion.</label>
+                    <br />
+                    <label title="2"><input type="radio" name="question1" value="2"> A different category of injury than an abrasion.</label>
+                    <br />
+                    <label title="1"><input type="radio" name="question1" value="3" required="required"> Less severe than an abrasion.</label>
+                    <br />
+                    <label title="2"><input type="radio" name="question1" value="4"> None of the above.</label>
+
+                    <input type="hidden" class="form-control" name="A serious type of abrasion." value="1">
+                </div>
+                <div id="question2" class="radio">
+                    <p class="question">It is okay to clean an abrasion with iodine or another such cleaning agent.</p>
+                    <label title="1"><input type="radio" name="question2" value="1" required="required"> True</label>
+                    <br />
+                    <label title="2"><input type="radio" name="question2" value="2"> False</label>
+
+                    <input type="hidden" class="form-control" name="False" value="2">
+                </div>
+                <div id="question3" class="radio">
+                    <p class="question">Abrasions are uncommon injuries.</p>
+                    <label title="1"><input type="radio" name="question3" value="1" required="required"> True</label>
+                    <br />
+                    <label title="2"><input type="radio" name="question3" value="2"> False</label>
+
+                    <input type="hidden" class="form-control" name="False" value="2">
+                </div>
+                <div id="question4" class="radio">
+                    <p class="question">Which of the following is true about abrasions.</p>
+                    <label title="1"><input type="radio" name="question4" value="1" required="required"> They are not painful.</label>
+                    <br />
+                    <label title="2"><input type="radio" name="question4" value="2"> They affect a small surface area.</label>
+                    <br />
+                    <label title="3"><input type="radio" name="question4" value="3"> They tend to cause considerable bleeding.</label>
+                    <br />
+                    <label title="4"><input type="radio" name="question4" value="4"> It is more likely to get one on a bony body part.</label>
+
+                    <input type="hidden" class="form-control" name="It is more likely to get one on a bony body part." value="4">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br />
+            <div id="result">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    jQuery(function($){
+        $("#abrasions").on("click", ".tab-nav-action", function(e){
+            e.preventDefault();
+            $(this).tab("show");
+        });
+
+        $("form").submit(function(event){
+            event.preventDefault();
+            var form = $("form").serializeArray();
+            $.post("../php/form.php", {form: form},
+                function(data){
+                    var html = [];
+                    $.each(data, function(key, value){
+                        if(value.value == true){
+                            html.push("<p class='correct'>" + value.name + "<br />" + value.answer + "<br /> </p>");
+                        } else{
+                            html.push("<p class='incorrect'>" + value.name + "<br /> Correct Answer: " + value.answer + "<br /> </p>");
+                        }
+                    });
+                    $("div#result").html(html.join(""));
+                });
+        });
+    });
+</script>

@@ -63,9 +63,15 @@ ul > li > a.nav-link
     width: 100%;
 }
 
-h1
+a#title
 {
     text-align: center;
+    font-size: 30pt;
+}
+
+a#title:hover
+{
+    text-decoration: none;
 }
 
 h2
@@ -108,4 +114,19 @@ footer
 .edu-list button span
 {
     margin-right: 20px;
+}
+
+p.correct
+{
+    color: green;
+}
+
+p.incorrect
+{
+    color: red;
+}
+
+p.question
+{
+    font-weight: bold;
 }
