@@ -1,4 +1,4 @@
-<div id="abrasions">
+<div id="choking">
     <ul class="nav nav-tabs edunav">
         <li class="active"><a class="tab-nav-action" href="#causes" role="tab" data-toggle="tab" aria-controls="causes" aria-expanded="true">Causes</a></li>
         <li><a class="tab-nav-action" href="#treatment" role="tab" data-toggle="tab" aria-controls="treatment"
@@ -6,58 +6,56 @@
         </li>
         <li><a class="tab-nav-action" href="#quiz" role="tab" data-toggle="tab" aria-controls="quiz" aria-expanded="false">Quiz</a></li>
     </ul>
+
+
+
+
     <div id="tab-content" class="tab-content">
         <div role="tabpanel" class="tab-pane fade in active" id="causes">
             <p>
-                Commonly known as scrapes, abrasions are injuries where the skin is rubbed or torn off. It is likely
-                that most people have suffered an abrasion before, likely multiple times. Common abrasions are rug burn,
-                and skinning your knee or elbow. Abrasions are not typically deep and usually do not bleed much, if at
-                all. However, as with most injuries, abrasions to the face or other blood rich areas are likely to bleed
-                , which can be misleading in terms of severity. It is common to receive abrasions more often on bony or
-                thinly skinned areas, like the elbows, knees, hands, and shins. Abrasions are typically more painful
-                than lacerations or puncture wounds because a much larger surface area is affected.
+		<ul>
+			<li>Choking is when something stuck in a person's airway and can be caused by:</li>
+				<ul>
+				<li>Anything that is stuck in the airway of the person. </li>
+				<li>Adults usually start choking from food with peanuts being the most common cause of choking. People have died choking on food.</li>
+				<li>With children, toys or small objects are usually the cause because children are more likely to put random objects in their mouth.</li>
+				</ul>
+			
+		</ul>
             </p>
-            <p>
-                While most abrasions are not deep or serious, an avulsion is a serious type of abrasion where the
-                affected skin and tissue is actually removed. These are very severe wounds because the affected region
-                is torn off, so it is hard to repair the damage. An avulsion should be cared for by a medical
-                professional immediately.
-            </p>
+
+	
+	
         </div>
+
+
+
+
         <div role="tabpanel" class="tab-pane fade" id="treatment">
             <p>
-                The first step in treatment is to stop the bleeding, if any, by simply applying pressure to the wound
-                site. This can be more difficult than for other injuries because of the larger surface area of the
-                wound. Cleaning the wound is still important as particles can get into the wound easily. However, it is
-                likely that the wound is not deep and any particles can usually be removed with ease by washing the wound
-                with soap and water. It is not recommended to use alcohol, iodine, peroxide, or other such cleaning
-                agents as it could further damage tissue and slow down healing. Applying an ice pack would help to
-                lessen any pain.
-            </p>
-            <p>
-                Infections are possible with abrasions; pay attention for continuing pain, the wound becoming red and
-                swollen, and pus. If bleeding has not ceased after several minutes of applying pressure or a bandage,
-                seek medical attention. If the victim has not had a tetanus vaccination in the past five years and the
-                wound has been exposed to foreign materials, help should be sought immediately. If someone has suffered
-                an avulsion, immediately bring them to the hospital. Attempt to bandage the wound and stop any bleeding
-                with pressure and by elevating the injury above the heart. Recovery for avulsions will vary greatly
-                depending on how much skin and tissue was removed.
+                If nothing else works, an emergency tracheostomy may be in order. This means cutting the victim’s neck and inserting a tube to allow air in. If done incorrectly, this can end the person’s life but it can also save it if done correctly.
             </p>
         </div>
+
+
+
+
+
+
         <div role="tabpanel" class="tab-pane fade" id="quiz">
             <h3>Please answer all questions</h3>
             <form method="post" action="../php/form.php">
                 <div id="Question 1" class="radio">
-                    <p class="question">An avulsion is:</p>
-                    <label title="1"><input type="radio" name="Question 1" value="1" required="required"> A serious type of abrasion.</label>
+                    <p class="question">Choking is caused by:</p>
+                    <label title="1"><input type="radio" name="Question 1" value="1" required="required"> bad smells.</label>
                     <br />
-                    <label title="2"><input type="radio" name="Question 1" value="2"> A different category of injury than an abrasion.</label>
+                    <label title="2"><input type="radio" name="Question 1" value="2"> bones breaking.</label>
                     <br />
-                    <label title="1"><input type="radio" name="Question 1" value="3" required="required"> Less severe than an abrasion.</label>
+                    <label title="1"><input type="radio" name="Question 1" value="3" required="required"> an object stuck in the airway.</label>
                     <br />
                     <label title="2"><input type="radio" name="Question 1" value="4"> None of the above.</label>
 
-                    <input type="hidden" class="form-control" name="A serious type of abrasion." value="1">
+                    <input type="hidden" class="form-control" name="A serious type of abrasion." value="3">
                 </div>
                 <div id="Question 2" class="radio">
                     <p class="question">It is okay to clean an abrasion with iodine or another such cleaning agent.</p>
@@ -96,6 +94,8 @@
         </div>
     </div>
 </div>
+
+
 <script>
     jQuery(function($){
         $("#abrasions").on("click", ".tab-nav-action", function(e){

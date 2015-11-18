@@ -1,8 +1,4 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
+	
 /* 
     Created on : Nov 9, 2015, 10:56:53 PM
     Author     : cina
@@ -12,6 +8,17 @@ and open the template in the editor.
 
 
 /*.edunav*/
+
+/*line border*/
+.edunav 
+{
+    width: inherit;
+    border-bottom: 4px solid #FF0000;
+    font-family: sans-serif;
+    line-height: 1;
+}
+
+
 ul.edunav > li > a
 {
     margin: 0;
@@ -25,14 +32,7 @@ ul.edunav > li > a
     box-sizing: border-box;
 }
 
-/*line border*/
-.edunav 
-{
-    width: inherit;
-    border-bottom: 4px solid #FF0000;
-    font-family: sans-serif;
-    line-height: 1;
-}
+
 
 /*before link formatting with line and transition and prefixes for compatiblity*/
 ul.edunav > li > a
@@ -53,7 +53,6 @@ ul.edunav > li > a
 
 
 
-
 /*turns text from black to white*/ 
 ul.edunav > li:hover > a,
 ul.edunav > li > a:hover
@@ -61,6 +60,10 @@ ul.edunav > li > a:hover
   color: #ffffff;
 }
 
+ul.edunav > li > a:hover
+{
+    background-color: red;
+}
 
 
 
@@ -89,29 +92,5 @@ ul.edunav > li > a:after
     /*^shape*/
 }
 
-ul.edunav > li > a:hover
-{
-    background-color: red;
-}
 
 
-/*red color tab effect:*/
-/*ul.edunav > li:hover > a:after,*/
-/*ul.edunav > li > a:hover:after*/
-/*{*/
-  /*background: #FF0000;*/
-/*}*/
-
-
-
-/*line placement:*/
-/*.edunav:after,*/
-/*ul.edunav:after*/
-/*{*/
-  /*content: ".";*/
-  /*display: block;*/
-  /*clear: both;*/
-  /*visibility: hidden;*/
-  /*line-height: 0;*/
-  /*height: 0;*/
-/*}*/
