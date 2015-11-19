@@ -1,0 +1,43 @@
+body{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.row{
+	margin-bottom: 10px;
+}
+.col-md-4{
+	margin-left: 10px;
+}
+
+#emergency{
+	border-radius: 10px;
+	background-color: red;
+	color: white;
+	padding-bottom: 10px;
+}
+
+#symptoms{
+	border-radius: 10px;
+	background-color: #e1e1e1;
+	height: 300px;
+}
+
+#picture{
+	border-radius: 10px;
+	background-color: #e1e1e1;
+	padding-bottom: 10px;
+}
+
+
+#treatment{
+	border-radius: 10px;
+	background-color: #e1e1e1;
+	padding-bottom: 10px;
+}
+
+#information{
+	border-radius: 10px;
+	background-color: #e1e1e1;
+	padding-bottom: 10px;
+}
