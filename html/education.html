@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>List of Injuries</title>
+    <meta charset="UTF-8">
+    <link href="../stylesheets/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/template.css" rel="stylesheet">
+    <link href="../stylesheets/menu_education.css" rel="stylesheet">
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container fill">
+            <!--Title bar-->
+            <header class="header">
+                <div class="row">
+                    <a href="kit.html" id="aid-kit" class="btn">Click Me!</a>
+                </div>
+                <div class="row">
+                    <a href="index.html" id="title">The First Aid Web Kit</a>
+                </div>
+            </header>
+        </div>
+    </nav>
+    <div class="container fill">
+        <div class="row">
+            <div class="col-md-3" id="left-col">
+                <nav class="navbar-fixed-side navbar-fixed-side-left">
+                    <ul id="danger-nav" class="list-unstyled">
+                        <li class="active">
+                            <a href="immediate-assistance.html" id="help" class="btn btn-danger nav-link">Immediate Assistance</a>
+                        </li>
+                        <li>
+                            <a href="education.html" id="info" class="btn btn-primary nav-link">Educational</a>
+                        </li>
+                        <li>
+                            <a href="911-info.html" id="911" class="btn btn-warning nav-link">911 Call Info</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-md-9" id="content">
+
+                <h2>Educational Sections</h2>
+                <div id="edu-section" class="list-group edu-list">
+                    <button type="button" class="list-group-item list-group-item-danger" data-section="abrasions">
+                        <span class="glyphicon glyphicon-asterisk"></span>Abrasions
+                    </button>
+                    <button type="button" class="list-group-item" data-section="allergic_reactions">
+                        <span class="glyphicon glyphicon-pencil"></span>Allergic Reactions
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-info" data-section="broken_bones">
+                        <span class="glyphicon glyphicon-bold"></span>Broken Bones
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-danger" data-section="burns">
+                        <span class="glyphicon glyphicon-fire"></span>Burns
+                    </button>
+                    <button type="button" class="list-group-item" data-section="choking">
+                        <span class="glyphicon glyphicon-alert"></span>Choking
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-info" data-section="dislocation">
+                        <span class="glyphicon glyphicon-compressed"></span>Dislocation
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-danger" data-section="lacerations">
+                        <span class="glyphicon glyphicon-scissors"></span>Lacerations
+                    </button>
+                    <button type="button" class="list-group-item" data-section="puncture_wounds">
+                        <span class="glyphicon glyphicon-pushpin"></span>Puncture Wounds
+                    </button>
+                    <button type="button" class="list-group-item list-group-item-info" data-section="seizures">
+                        <span class="glyphicon glyphicon-flash"></span>Seizures
+                    </button>
+                </div>
+
+            </div>
+
+            <div id="footer" class="row">
+                <div class="col-md-12">
+                    <footer>
+                        <p class="important">
+                            If this is a true emergency, please call 911 immediately.
+                        </p>
+                        <p>
+                            Please review our disclaimer, as well as important website information <a href="#">here</a>.
+                            For a list of citations, please go <a href="#">here</a>.
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

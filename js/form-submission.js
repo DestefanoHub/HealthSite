@@ -1,7 +1,7 @@
 /**
  * Created by andrew on 11/3/15.
  */
-$(document).ready(function(){
+jQuery(function ($) {
     $("form").submit(function(event){
         event.preventDefault();
         var form = $("form").serializeArray();
