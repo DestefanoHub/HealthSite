@@ -12,6 +12,12 @@ and open the template in the editor.
     text-align: center;
 }
 
+.innerheader
+{
+	text-align:left;
+	color:red;
+}
+
 #aid-kit
 {
     padding: 2.75em 15px;
