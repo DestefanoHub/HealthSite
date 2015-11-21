@@ -18,6 +18,8 @@ and open the template in the editor.
 	color:red;
 }
 
+
+
 #aid-kit
 {
     padding: 2.75em 15px;
@@ -120,6 +122,12 @@ footer
 .edu-list button span
 {
     margin-right: 20px;
+	color:black;
+}
+
+.edu-list button
+{
+	color:black;
 }
 
 p.correct
