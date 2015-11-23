@@ -1,0 +1,117 @@
+<div id="allergic_reactions">
+<h2 class="innerheader">Allergic Reactions</h2> 
+    <ul class="nav nav-tabs edunav">
+        <li class="active"><a class="tab-nav-action" href="#causes" role="tab" data-toggle="tab" aria-controls="causes" aria-expanded="true">Causes</a></li>
+        <li><a class="tab-nav-action" href="#treatment" role="tab" data-toggle="tab" aria-controls="treatment"
+               aria-expanded="false">Treatment</a>
+        </li>
+        <li><a class="tab-nav-action" href="#quiz" role="tab" data-toggle="tab" aria-controls="quiz" aria-expanded="false">Quiz</a></li>
+    </ul>
+
+    <div id="tab-content" class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="causes">
+          
+	
+        </div>
+
+
+
+
+        <div role="tabpanel" class="tab-pane fade" id="treatment">
+            <p>
+
+            </p>
+        </div>
+
+
+
+
+
+
+        <div role="tabpanel" class="tab-pane fade" id="quiz">
+            <h3>Please answer all questions</h3>
+            <form method="post" action="../php/form.php">
+                <div id="question1" class="radio">
+                    <p class="question">What is a fracture?</p>
+                    <label title="1"><input type="radio" name="Question 1" value="1" required="required"> </label>
+                    <br />
+                    <label title="2"><input type="radio" name="Question 1" value="2"></label>
+                    <br />
+                    <label title="1"><input type="radio" name="Question 1" value="3"> </label>
+                    <br />
+                    <label title="2"><input type="radio" name="Question 1" value="4"> </label>
+
+                    <input type="hidden" class="form-control" name="" value="4">
+
+
+					<!-- name is set to correct answer and its value -->
+
+
+
+
+
+                </div>
+                <div id="Question 2" class="radio">
+                    <p class="question"></p>
+                    <label title="1"><input type="radio" name="Question 2" value="1" required="required"> </label>
+                    <br />
+                    <label title="2"><input type="radio" name="Question 2" value="2"> </label>
+
+                    <input type="hidden" class="form-control" name="True" value="1">
+                </div>
+                <div id="Question 3" class="radio">
+                    <p class="question"></p>
+                    <label title="1"><input type="radio" name="Question 3" value="1" required="required"> </label>
+                    <br />
+                    <label title="2"><input type="radio" name="Question 3" value="2"> </label>
+
+                    <input type="hidden" class="form-control" name="True" value="1">
+                </div>
+                <div id="Question 4" class="radio">
+                    <p class="question"></p>
+                    <label title="1"><input type="radio" name="Question 4" value="1" required="required"> </label>
+                    <br />
+                    <label title="2"><input type="radio" name="Question 4" value="2"> </label>
+                    <br />
+                    <label title="3"><input type="radio" name="Question 4" value="3"> </label>
+                    <br />
+                    <label title="4"><input type="radio" name="Question 4" value="4"> </label>
+
+                    <input type="hidden" class="form-control" name="" value="3">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br />
+            <div id="result">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    jQuery(function($){
+        $("#allergic_reactions").on("click", ".tab-nav-action", function(e){
+            e.preventDefault();
+            $(this).tab("show");
+        });
+
+        $("form").submit(function(event){
+            event.preventDefault();
+            var form = $("form").serializeArray();
+            $.post("../php/form.php", {form: form},
+                function(data){
+                    var html = [];
+                    $.each(data, function(key, value){
+                        if(value.value == true){
+                            html.push("<p class='correct'>" + value.name + "<br />" + value.answer + "<br /> </p>");
+                        } else{
+                            html.push("<p class='incorrect'>" + value.name + "<br /> Correct Answer: " + value.answer + "<br /> </p>");
+                        }
+                    });
+                    $("div#result").html(html.join(""));
+                });
+        });
+    });
+</script>

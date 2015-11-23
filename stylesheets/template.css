@@ -14,8 +14,8 @@ and open the template in the editor.
 
 .innerheader
 {
-	text-align:left;
 	color:red;
+	position:inherit;
 }
 
 
@@ -75,6 +75,7 @@ a#title
 {
     text-align: center;
     font-size: 30pt;
+
 }
 
 a#title:hover
