@@ -23,6 +23,18 @@ and open the template in the editor.
 	color:red;
 }
 
+.icon_insert
+{
+	height:25px;
+	width:25px;
+	
+}
+
+.button_padding
+{
+	padding-left:0.7em;
+}
+
 /*ul.checkboxcustom
 {
 	list-style-image: url('../media/images/uncheckedbox.png');
