@@ -7,6 +7,11 @@
     <link href="../stylesheets/template.css" rel="stylesheet">
     <script src="../js/jquery-1.11.3.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+	<script src="../js/i_a_list.js"></script>
+
+	<!-- ^i_a_list handles clicks for the list and loads the div holding the list with the html 
+	of the data it is related to. see div id="content" i_a-section is what is being clicked -->
+
 </head>
 <body>
 <nav class="navbar navbar-default" role="navigation">
@@ -41,7 +46,36 @@
         </div>
 
         <div class="col-md-9" id="content">
-
+ 				<h2 class="center_header">Immediate Assistance</h2>
+                <div id="i_a-section" class="list-group edu-list">
+                    <button type="button" class="list-group-item" data-section="abrasions" >
+                        <span class="glyphicon glyphicon-asterisk"></span>Abrasions
+                    </button>
+                    <button type="button" class="list-group-item" data-section="allergic_reactions">
+                        <span class="glyphicon glyphicon-pencil"></span>Allergic Reactions
+                    </button>
+                    <button type="button" class="list-group-item" data-section="broken_bones">
+                        <span class="glyphicon glyphicon-bold"></span>Broken Bones
+                    </button>
+                    <button type="button" class="list-group-item" data-section="burns">
+                        <span class="glyphicon glyphicon-fire"></span>Burns
+                    </button>
+                    <button type="button" class="list-group-item" data-section="choking">
+                        <span class="glyphicon glyphicon-alert"></span>Choking
+                    </button>
+                    <button type="button" class="list-group-item" data-section="dislocation">
+                        <span class="glyphicon glyphicon-compressed"></span>Dislocation
+                    </button>
+                    <button type="button" class="list-group-item" data-section="lacerations">
+                        <span class="glyphicon glyphicon-scissors"></span>Lacerations
+                    </button>
+                    <button type="button" class="list-group-item" data-section="puncture_wounds">
+                        <span class="glyphicon glyphicon-pushpin"></span>Puncture Wounds
+                    </button>
+                    <button type="button" class="list-group-item" data-section="seizures">
+                        <span class="glyphicon glyphicon-flash"></span>Seizures
+                    </button>
+                </div>
         </div>
 
         <div id="footer" class="row">

@@ -18,6 +18,11 @@ and open the template in the editor.
 	position:inherit;
 }
 
+.center_header
+{
+	color:red;
+}
+
 /*ul.checkboxcustom
 {
 	list-style-image: url('../media/images/uncheckedbox.png');
