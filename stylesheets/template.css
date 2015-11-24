@@ -14,8 +14,8 @@ and open the template in the editor.
 
 .innerheader
 {
-	color:red;
-	position:inherit;
+	color: red;
+	margin-left: 0;
 }
 
 .center_header
@@ -27,6 +27,11 @@ and open the template in the editor.
 {
 	list-style-image: url('../media/images/uncheckedbox.png');
 }*/
+
+div#content
+{
+    font-size: 12pt;
+}
 
 #aid-kit
 {
