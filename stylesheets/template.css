@@ -40,6 +40,11 @@ and open the template in the editor.
 	padding-left:0.4em;
 }
 
+.button_padding_l
+{
+	padding-left:0.5em;
+}
+
 /*ul.checkboxcustom
 {
 	list-style-image: url('../media/images/uncheckedbox.png');
