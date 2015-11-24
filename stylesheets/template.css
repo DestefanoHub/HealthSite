@@ -18,10 +18,10 @@ and open the template in the editor.
 	position:inherit;
 }
 
-ul.checkboxcustom
+/*ul.checkboxcustom
 {
 	list-style-image: url('../media/images/uncheckedbox.png');
-}
+}*/
 
 #aid-kit
 {
