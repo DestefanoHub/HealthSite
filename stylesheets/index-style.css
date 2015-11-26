@@ -30,8 +30,6 @@ footer
 #aid-kit
 {
     padding: 2.75em 15px;
-    color: greenyellow;
-    font-size: 16pt;
     width: 500px;
     height: 205px;
     background-image: url("../media/images/Kit.png");
@@ -42,8 +40,6 @@ footer
 #aid-kit:hover
 {
     padding: 2.25em 15px;
-    font-weight: bold;
-    font-size: 18pt;
     background-image: url("../media/images/Kit_Clicked.png");
 }
 

@@ -68,8 +68,6 @@ div#content
 #aid-kit:hover
 {
     padding: 2.25em 15px;
-    font-weight: bold;
-    font-size: 18pt;
     background-image: url("../media/images/Kit_Clicked.png");
 }
 
