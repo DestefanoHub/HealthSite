@@ -58,12 +58,10 @@ div#content
 #aid-kit
 {
     padding: 2.75em 15px;
-    color: greenyellow;
-    font-size: 16pt;
-    width: 250px;
-    height: 150px;
-    background-image: url("../media/images/first-aid-box.jpg");
-    background-size: 250px 150px;
+    width: 500px;
+    height: 205px;
+    background-image: url("../media/images/Kit.png");
+    background-size: 500px 205px;
     background-repeat: no-repeat;
 }
 
@@ -72,6 +70,7 @@ div#content
     padding: 2.25em 15px;
     font-weight: bold;
     font-size: 18pt;
+    background-image: url("../media/images/Kit_Clicked.png");
 }
 
 #aid-kit > img
