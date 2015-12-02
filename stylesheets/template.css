@@ -52,7 +52,7 @@ and open the template in the editor.
 
 div#content
 {
-    font-size: 12pt;
+    font-size: 14pt;
 }
 
 #aid-kit
@@ -177,4 +177,9 @@ p.incorrect
 p.question
 {
     font-weight: bold;
+}
+
+div.slideout
+{
+    display: none;
 }
