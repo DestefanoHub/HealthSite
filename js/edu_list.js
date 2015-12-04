@@ -5,6 +5,7 @@ jQuery(function ($) {
         $.get("../page-content/" + pageName, function (pageData) {
             $contentDiv.html(pageData);
             $.getScript("../js/slideout.js");
+            $.getScript("../js/form-submission.js");
         });
     });
 });
