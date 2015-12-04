@@ -17,10 +17,10 @@ for($i = 0; $i < count($form); $i+=2){
 
 for($j = 0; $j < count($userAnswers); $j++){
     if($userAnswers[$j]['value'] == $correctAnswers[$j]['value']){
-        $result = array("name" => $userAnswers[$j]['name'], "value" => true, "answer" => $correctAnswers[$j]['name']);
+        $result = array("name" => $userAnswers[$j]['name'], "value" => true, "answer" => $correctAnswers[$j]['value']);
         $return[] = $result;
     } else{
-        $result = array("name" => $userAnswers[$j]['name'], "value" => false, "answer" => $correctAnswers[$j]['name']);
+        $result = array("name" => $userAnswers[$j]['name'], "value" => false, "answer" => $correctAnswers[$j]['value']);
         $return[] = $result;
     }
 }

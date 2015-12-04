@@ -7,15 +7,16 @@ jQuery(function ($) {
         var form = $("form").serializeArray();
         $.post("../php/form.php", {form: form},
             function(data){
-                var html = [];
+                console.log(data);
                 $.each(data, function(key, value){
                     if(value.value == true){
-                        html.push("<p class='correct'>" + value.name + "<br />" + value.answer + "<br /> </p>");
+                        $("div#"+value.name+" > p").css("color", "green");
+
                     } else{
-                        html.push("<p class='incorrect'>" + value.name + "<br /> Correct Answer: " + value.answer + "<br /> </p>");
+                        $("div#"+value.name+" > p").css("color", "red");
+                        $("div#"+value.name+" > label[title$='"+value.answer+"']").css("color", "green");
                     }
                 });
-                $("div#result").html(html.join(""));
             });
     });
 });
