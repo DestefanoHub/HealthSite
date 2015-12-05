@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link href="../stylesheets/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../stylesheets/template.css" rel="stylesheet">
+    <link href="../stylesheets/911_Call.css" rel="stylesheet">
     <script src="../js/jquery-1.11.3.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 </head>
@@ -44,22 +45,35 @@
         </div>
 
         <div class="col-md-9" id="content">
-            <ul>
-                <li>Take a Deep Breath</li>
-                <li>Call 911</li>
-                <li>What to tell the 911 operator</li>
-                <ul>
-                    <li>Give the operator your <b>NAME</b></li>
-                    <li><b>LOCATION</b> of emergency include the Street name</li>
-                    <li><b>PHONE NUMBER</b> you are calling from</li>
-                    <li>The reason you are calling</li>
-                    <li>Physical Description of the injured person(s)</li>
-                    <li>Describe injuries or symptoms of person needing medical emergency</li>
-                    <li>Listen to the operator's instruction</li>
-                    <li>Answer all of their questions</li>
-                    <li><b>STAY</b> on the the line until the operator instructs you to hang up</li>
-                </ul>
-            </ul>
+            <div class="row">
+                <div class="col-md-6" id="main">
+                    <h3>911 Call</h3>
+                    <ul>
+                        <li>Take a Deep Breath</li>
+                        <li>Call 911</li>
+                        <li>What to tell the 911 operator</li>
+                        <ul>
+                            <li>Give the operator your <b>NAME</b></li>
+                            <li><b>LOCATION</b> of emergency include the Street name</li>
+                            <li><b>PHONE NUMBER</b> you are calling from</li>
+                            <li>The reason you are calling</li>
+                            <li>Physical Description of the injured person(s)</li>
+                            <li>Describe injuries or symptoms of person needing medical emergency</li>
+                            <li>Listen to the operator's instruction</li>
+                            <li>Answer all of their questions</li>
+                            <li><b>STAY</b> on the the line until the operator instructs you to hang up</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="col-md-1">
+                    <input type="image" src="../media/images/MD_Button.png"  class="dr_button" onclick="toggle_visibility('hidden')"></input>
+                </div>
+                <div class="col-md-6" id="hidden" style="display:none;">
+                    <div class="dr_rock">
+                        <img class="pic" id="dr_rock_image" src="../media/images/Dr_rock.png" alt="Dr.Rock"/>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="footer" class="row">
