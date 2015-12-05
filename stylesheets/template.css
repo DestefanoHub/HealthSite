@@ -14,19 +14,19 @@ and open the template in the editor.
 
 .innerheader
 {
-	color: blue;
+	color: #1240ab;
 	margin-left: 0;
 }
 
 .center_header
 {
-	color: blue;
+	color: #1240ab;
 }
 
 .icon_insert
 {
-	height:25px;
-	width:25px;
+	height:30px;
+	width:30px;
 	
 }
 
@@ -138,7 +138,7 @@ h2
 
 .glyphicon
 {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 footer
