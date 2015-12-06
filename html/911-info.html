@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>List of Injuries</title>
+    <title>911 Call Information</title>
     <meta charset="UTF-8">
     <link href="../stylesheets/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../stylesheets/template.css" rel="stylesheet">
-    <link href="../stylesheets/911_Call.css" rel="stylesheet">
+    <!--<link href="../stylesheets/911_Call.css" rel="stylesheet">-->
     <script src="../js/jquery-1.11.3.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 </head>
@@ -47,26 +47,34 @@
         <div class="col-md-9" id="content">
             <div class="row">
                 <div class="col-md-6" id="main">
-                    <h3>911 Call</h3>
+                    <h2 class="center_header">911 Call</h2>
                     <ul>
                         <li>Take a Deep Breath</li>
                         <li>Call 911</li>
-                        <li>What to tell the 911 operator</li>
-                        <ul>
-                            <li>Give the operator your <b>NAME</b></li>
-                            <li><b>LOCATION</b> of emergency include the Street name</li>
-                            <li><b>PHONE NUMBER</b> you are calling from</li>
-                            <li>The reason you are calling</li>
-                            <li>Physical Description of the injured person(s)</li>
-                            <li>Describe injuries or symptoms of person needing medical emergency</li>
-                            <li>Listen to the operator's instruction</li>
-                            <li>Answer all of their questions</li>
-                            <li><b>STAY</b> on the the line until the operator instructs you to hang up</li>
-                        </ul>
+                        <li>
+                            What to tell the 911 operator
+                            <ul>
+                                <li>Give the operator your <strong>NAME</strong></li>
+                                <li><strong>LOCATION</strong> of emergency include the Street name</li>
+                                <li><strong>PHONE NUMBER</strong> you are calling from</li>
+                                <li>The reason you are calling</li>
+                                <li>Physical description of the injured person(s)</li>
+                                <li>Describe injuries or symptoms of person needing medical emergency</li>
+                                <li>Listen to the operator's instruction</li>
+                                <li>Answer all of their questions</li>
+                                <li><strong>STAY</strong> on the the line until the operator instructs you to hang up</li>
+                            </ul>
+                        </li>
                     </ul>
+                    <p>
+                        Remember, the 911 operator will instruct you while you are on the phone. Always follow all of the 
+                        operator's instructions. Also, make sure to always call 911 first in an emergency. The information
+                        presented above is just useful to have when calling 911 so you can more quickly describe the situation
+                        to the operator. Do not wait to call 911 so that you can gather all of the above information.
+                    </p>
                 </div>
                 <div class="col-md-1">
-                    <input type="image" src="../media/images/MD_Button.png"  class="dr_button" onclick="toggle_visibility('hidden')"></input>
+                    <input type="image" src="../media/images/MD_Button.png"  class="dr_button" onclick="toggle_visibility('hidden')">
                 </div>
                 <div class="col-md-6" id="hidden" style="display:none;">
                     <div class="dr_rock">
@@ -80,8 +88,8 @@
             <div class="col-md-12">
                 <footer>
                     <p>
-                        Please review our disclaimer, as well as important website information <a href="#">here</a>.
-                        For a list of citations, please go <a href="#">here</a>.
+                        Please review our disclaimer, as well as important website information <a href="disclaimer.html">here</a>.
+                        For a list of citations, please go <a href="sources.html">here</a>.
                     </p>
                 </footer>
             </div>
