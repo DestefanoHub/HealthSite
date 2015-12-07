@@ -26,7 +26,6 @@ and open the template in the editor.
 
 .center_header
 {
-    font-family: Amaranth;
     font-size: 35px;
 	color: #1240ab;
 }
@@ -60,7 +59,6 @@ and open the template in the editor.
 
 div#content
 {
-    font-family: Amaranth, serif;
     font-size: 14pt;
 }
 
@@ -252,7 +250,30 @@ div.slideout
 {
     display: none;
 }
-
+#picture{
+    width: 320px;
+    height: 400px;
+    margin-top:3%;
+    margin-left:3%;
+}
+#picture1{
+    width: 320px;
+    height: 400px;
+    margin-top:3%;
+    margin-left:3%;
+}
+#picture2{
+    width: 320px;
+    height: 400px;
+    margin-top:3%;
+    margin-left:3%;
+}
+#picture3{
+    width: 320px;
+    height: 400px;
+    margin-top:3%;
+    margin-left:3%;
+}
 
 *
 {
