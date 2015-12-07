@@ -10,3 +10,12 @@ choking_help.jpg http://www.cprandfirstaid.net/?p=pages&id=157&curr0=2
 
 
 immediate_abrasion.jpg: https://s3.amazonaws.com/classconnection/429/flashcards/8869429/jpeg/371978-abrasion-14F7F7C57E2599E4C65.jpeg
+
+
+
+
+scrape: http://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/media/medical/hw/n5551331.jpg
+
+allergicreaction  https://www.nlm.nih.gov/medlineplus/ency/images/ency/fullsize/19316.jpg
+
+
