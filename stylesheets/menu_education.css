@@ -13,7 +13,7 @@
 .edunav 
 {
     width: inherit;
-    border-bottom: 4px solid #FF0000;
+    border-bottom: 4px solid #f5001d;
     font-family: sans-serif;
     line-height: 1;
 }
@@ -63,7 +63,7 @@ ul.edunav > li > a:hover
 
 ul.edunav > li > a:hover
 {
-    background-color: red;
+    background-color: #f5001d;
 }
 
 
@@ -92,6 +92,5 @@ ul.edunav > li > a:after
   transform: perspective(5px) rotateX(2deg);
     /*^shape*/
 }
-
 
 
