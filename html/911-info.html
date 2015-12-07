@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <link href="../stylesheets/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../stylesheets/template.css" rel="stylesheet">
-    <!--<link href="../stylesheets/911_Call.css" rel="stylesheet">-->
+    <link href="../stylesheets/911_Call.css" rel="stylesheet">
     <script src="../js/jquery-1.11.3.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dr_rock.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-default" role="navigation">
@@ -32,13 +33,13 @@
             <nav class="navbar-fixed-side navbar-fixed-side-left">
                 <ul id="danger-nav" class="list-unstyled">
                     <li>
-                        <a href="immediate-assistance.html" id="help" class="btn btn-danger nav-link">Immediate Assistance</a>
+                        <a href="immediate-assistance.html" id="help" class="btn nav-link"></a>
                     </li>
                     <li>
-                        <a href="education.html" id="info" class="btn btn-primary nav-link">Educational</a>
+                        <a href="education.html" id="info" class="btn nav-link"></a>
                     </li>
                     <li>
-                        <a href="911-info.html" id="911" class="btn btn-warning nav-link">911 Call Info</a>
+                        <a href="911-info.html" id="call" class="btn nav-link"></a>
                     </li>
                 </ul>
             </nav>
@@ -78,7 +79,9 @@
                 </div>
                 <div class="col-md-6" id="hidden" style="display:none;">
                     <div class="dr_rock">
-                        <img class="pic" id="dr_rock_image" src="../media/images/Dr_rock.png" alt="Dr.Rock"/>
+
+                        <p class="speech">Remember to Call 911 if this is an emergency
+                            <img class="pic" id="dr_rock_image" src="../media/images/Dr_rock.png" alt="Dr.Rock"/></p>
                     </div>
                 </div>
             </div>
