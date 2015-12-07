@@ -7,6 +7,12 @@ and open the template in the editor.
     Created on : Nov 8, 2015, 2:34:22 PM
     Author     : johnson
 */
+
+.sources > li
+{
+    list-style: none;
+    
+}
 .header
 {
     text-align: center;

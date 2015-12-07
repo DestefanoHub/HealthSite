@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Sources</title>
     <meta charset="UTF-8">
-    <title>Disclaimer</title>
     <link href="../stylesheets/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/template.css" rel="stylesheet">
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+
 </head>
 <body>
-    <div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container fill">
+            <!--Title bar-->
+            <header class="header">
+                <div class="row">
+                    <a href="kit.html" id="aid-kit" class="btn"></a>
+                </div>
+                <div class="row">
+                    <a href="index.html" id="title">The First Aid Web Kit</a>
+                    <p class="important">
+                        If this is a real emergency, please call 911 immediately.
+                    </p>
+                </div>
+            </header>
+        </div>
+    </nav>
+    <div class="container fill">
         <div class="row">
-            <div class="col=md=12">
-                <h2>Disclaimer</h2>
+            <div class="col-md-3" id="left-col">
+                <nav class="navbar-fixed-side navbar-fixed-side-left">
+                    <ul id="danger-nav" class="list-unstyled">
+                        <li>
+                            <a href="immediate-assistance.html" id="help" class="btn btn-danger nav-link">Immediate Assistance</a>
+                        </li>
+                        <li>
+                            <a href="education.html" id="info" class="btn btn-primary nav-link">Educational</a>
+                        </li>
+                        <li>
+                            <a href="911-info.html" id="911" class="btn btn-warning nav-link">911 Call Info</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+	<div class="col-md-9">
+		
+		<h2 class="innerheader">Disclaimer</h2>
                 <p>
                     The First Aid Web Kit is designed to provide people with first aid knowledge both in an emergency (through
                     the Immediate Assistance sections) and for more detailed learning (through the Educational sections). The
@@ -30,6 +67,18 @@
                     from this site. Always follow the instructions of a medical professional even if it contradicts the information
                     that this site presents.
                 </p>
+            </div>
+        
+        
+        <div id="footer" class="row">
+                <div class="col-md-12">
+                    <footer>
+                        <p>
+                            
+                            For a list of citations, please go <a href="sources.html">here</a>.
+                        </p>
+                    </footer>
+                </div>
             </div>
         </div>
     </div>
