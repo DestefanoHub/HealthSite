@@ -79,3 +79,8 @@ div.nav-section
 {
     width: inherit;
 }
+
+*
+{
+    font-family: Gotham, Futura, sans-serif;
+}

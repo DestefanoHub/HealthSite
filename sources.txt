@@ -7,3 +7,6 @@ Dislocations: http://www.healthline.com/health/dislocation#Treatment6
 Broken bones: http://orthoinfo.aaos.org/topic.cfm?topic=a00139
 
 choking_help.jpg http://www.cprandfirstaid.net/?p=pages&id=157&curr0=2
+
+
+immediate_abrasion.jpg: https://s3.amazonaws.com/classconnection/429/flashcards/8869429/jpeg/371978-abrasion-14F7F7C57E2599E4C65.jpeg
