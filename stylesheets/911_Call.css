@@ -20,6 +20,15 @@
     height: 60px;
     width: 80px;
 }
+.injury_image{
+    border: 8px solid #FFF673;
+    border-radius: 10px;
+}
+.pic_tag
+{
+    margin-left:3%;
+    font-size: 12px;
+}
 .pic
 {
     height: 250px;
