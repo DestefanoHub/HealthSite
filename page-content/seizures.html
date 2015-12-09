@@ -110,18 +110,31 @@
         </div>
 
         <div role="tabpanel" class="tab-pane fade" id="treatment">
-            <p>
-                When someone begins having a seizure it is important to remain calm. There are two treatment procedures to
-                follow when a person begins to have a seizure: while the seizure is occurring and after
-                the seizure.
-            </p>
-            <p>
-                <strong>During</strong> a seizure you need to protect the person from other injuries, by keeping them from falling or guiding
-                them to the floor. Move any furniture or objects that might harm the person. Place the person on
-                their side so that any fluid that might form can leak out of their mouth. Don&rsquo;t apply TOO much pressure on
-                the body and never try to hold the person down. Please keep your fingers away from the person&rsquo;s mouth for
-                they might bite you. Lastly pay attention to what the person is doing and report it to a doctor later.
-            </p>
+            <div class="row">
+                <div class="col-xs-6">
+                    <p>
+                        When someone begins having a seizure it is important to remain calm. There are two treatment procedures to
+                        follow when a person begins to have a seizure: while the seizure is occurring and after
+                        the seizure.
+                    </p>
+                    <p>
+                        <strong>During</strong> a seizure you need to protect the person from other injuries, by keeping them from falling or guiding
+                        them to the floor. Move any furniture or objects that might harm the person. Place the person on
+                        their side so that any fluid that might form can leak out of their mouth. Don&rsquo;t apply TOO much pressure on
+                        the body and never try to hold the person down. Please keep your fingers away from the person&rsquo;s mouth for
+                        they might bite you. Lastly pay attention to what the person is doing and report it to a doctor later.
+                    </p>
+                </div>
+                <div class="col-xs-1">
+                    <input type="image" src="../media/images/MD_Button.png"  class="dr_button" onclick="toggle_visibility('hidden')">
+                </div>
+                <div class="col-xs-6" id="hidden" style="display:none;">
+                    <div class="dr_rock">
+                        <p class="speech">Dr Rock Says: Remember to Call 911 if this is an emergency!
+                            <img class="pic" id="dr_rock_image" src="../media/images/Dr_rock.png" alt="Dr.Rock"/></p>
+                    </div>
+                </div>
+            </div>
             <ol>
                 You need to pay attention to:
                 <li>How the person&rsquo;s body moved.</li>
@@ -139,15 +152,6 @@
                 person until the surroundings are familiar to the person. The last step is to take the person to the
                 doctor.
             </p>
-                        <div class="col-xs-1">
-                <input type="image" src="../media/images/MD_Button.png"  class="dr_button" onclick="toggle_visibility('hidden')">
-            <div class="col-xs-6" id="hidden" style="display:none;">
-            <div class="dr_rock">
-                <p class="speech">Dr Rock Says: Remember to Call 911 if this is an emergency!
-                <img class="pic" id="dr_rock_image" src="../media/images/Dr_rock.png" alt="Dr.Rock"/></p>
-            </div>
-            </div>
-            </div>
         </div>
 
 

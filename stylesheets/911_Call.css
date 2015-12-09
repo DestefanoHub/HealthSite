@@ -1,8 +1,8 @@
 .dr_rock
 {
-    margin-right: 40%;
-    margin-top:15%;
-    z-index: 1;
+    margin-left: 5%;
+    margin-top:5%;
+
 }
 #dr_rock > img
 {
@@ -12,8 +12,8 @@
 
 #dr_rock
 {
-    height: 500px;
-    width:400px;
+    height: 250px;
+    width:200px;
 }
 .dr_button
 {
