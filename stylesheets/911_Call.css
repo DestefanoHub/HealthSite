@@ -2,6 +2,7 @@
 {
     margin-right: 40%;
     margin-top:15%;
+    z-index: 1;
 }
 #dr_rock > img
 {
@@ -26,6 +27,7 @@
 }
 p.speech
 {
+    z-index: 1;
     position: relative;
     padding: 10px;
     width: 300px;
@@ -40,6 +42,9 @@ p.speech
     -webkit-box-shadow: 2px 2px 4px #888;
     -moz-box-shadow: 2px 2px 4px #888;
     box-shadow: 2px 2px 4px #888;
+    font-family: Amaranth;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 p.speech:before
